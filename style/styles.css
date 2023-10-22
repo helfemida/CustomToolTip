@@ -13,15 +13,14 @@
 table, th, td {
     border: 1px solid;
     border-collapse: collapse;
-    
+    z-index: 2;
   }
 .year{
     border: none;
 }
 table{
     border: 1px solid gray;
-    width: 90%
-    
+    width: 80%
 }
 .element, td{
     cursor: pointer;
@@ -33,9 +32,12 @@ table{
     border-radius: 50%;
     background-color: rgba(176, 126, 204,0.3);
     position: absolute;
+    z-index: 1;
 }
 .tooltip-container {
     display: flex;
     justify-content: center;
-    margin-top: 30%;
+    align-content: center;
+    padding-top: 15%;
+    z-index: 2;
 }

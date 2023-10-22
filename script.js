@@ -9,15 +9,18 @@ tooltipContainer.addEventListener('mouseover', (e) => {
         customTooltip.textContent = tooltipText;
         customTooltip.style.display = 'block';
         
-        customTooltip.style.top = e.pageY + 'px';
-        customTooltip.style.left = e.pageX + 'px';
-
+        customTooltip.style.top = e.pageY + 20 + 'px';
+        customTooltip.style.left = e.pageX +10 + 'px';
     }
 });
 
-
-
 tooltipContainer.addEventListener('mouseout', () => {
     customTooltip.style.display = 'none';
+});
+
+document.addEventListener('mousemove', (e) => {
+    cursor.style.left = e.clientX-30 + 'px';
+    cursor.style.top = e.clientY-30 + 'px';
 
 });
+
