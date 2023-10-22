@@ -10,11 +10,32 @@
     z-index: 1;
     font-size: 14px;
 }
-
-.element {
-    cursor: pointer;
+table, th, td {
+    border: 1px solid;
+    border-collapse: collapse;
+    
+  }
+.year{
+    border: none;
 }
-
+table{
+    border: 1px solid gray;
+    width: 90%
+    
+}
+.element, td{
+    cursor: pointer;
+    padding: 5px;
+}
+#cursor-bg{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(176, 126, 204,0.3);
+    position: absolute;
+}
 .tooltip-container {
     display: flex;
+    justify-content: center;
+    margin-top: 30%;
 }
