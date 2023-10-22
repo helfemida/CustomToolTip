@@ -9,8 +9,8 @@ tooltipContainer.addEventListener('mouseover', (e) => {
         customTooltip.textContent = tooltipText;
         customTooltip.style.display = 'block';
         
-        customTooltip.style.top = e.pageY + 20 + 'px';
-        customTooltip.style.left = e.pageX +10 + 'px';
+        customTooltip.style.top = e.pageY + 10 + 'px';
+        customTooltip.style.left = e.pageX + 5 + 'px';
     }
 });
 
